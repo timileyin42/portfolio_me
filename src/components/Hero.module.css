@@ -1,0 +1,122 @@
+/* Hero.module.css */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.profileImageContainer {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.profileImageContainer:hover {
+  transform: scale(1.05);
+}
+
+.heroPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #4a5568;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroButton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 119, 181, 0.2);
+  border: 2px solid transparent;
+}
+
+.heroButton:hover {
+  background-color: white;
+  color: #0077b5;
+  border-color: #0077b5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 119, 181, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profileImageContainer {
+    width: 150px;
+    height: 150px;
+    border-width: 4px;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileImageContainer {
+    width: 120px;
+    height: 120px;
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+}

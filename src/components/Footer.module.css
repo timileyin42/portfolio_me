@@ -1,0 +1,71 @@
+/* Footer.module.css */
+.footer {
+  background-color: #2d3748;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.socialLink {
+  color: #fff;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: #0077b5;
+  transform: translateY(-3px);
+}
+
+/* Font Awesome icons */
+.fab, .fas {
+  line-height: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+  
+  .socialLinks {
+    gap: 1rem;
+  }
+  
+  .socialLink {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,88 @@
+/* Header.module.css */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #0077b5;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0077b5;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Active link styling */
+.navLink[aria-current="page"] {
+  color: #0077b5;
+}
+
+.navLink[aria-current="page"]::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    justify-content: center;
+  }
+  
+  .navList {
+    gap: 1rem;
+  }
+  
+  .navLink {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navList {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navLink {
+    font-size: 0.85rem;
+  }
+}
