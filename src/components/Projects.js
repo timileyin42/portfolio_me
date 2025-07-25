@@ -27,13 +27,24 @@ const Projects = () => {
     },
     {
       title: "WiseWheel Rental",
-      description: "A car rental web application built using Flask with authentication, payment processing, and location services.",
+      description: "A car rental web application built using FASTAPI with authentication, payment processing, and location services.",
       technologies: [
-        ["Python", "Flask", "MySQL"],
+        ["Python", "FastAPI", "PostgreSQL"],
         ["Google Maps API", "Paystack"]
       ],
       image: "/assets/WiseWheel.png",
+      demoLink: "https://youtu.be/pdp5hwpeUNc",
       githubLink: "https://github.com/timileyin42/Wise_Wheel_App"
+    },
+    {
+      title: "Corporate Professionals Platform",
+      description: "Engineered a robust backend API for a global networking platform connecting corporate professionals with opportunities for growth, mentorship, and career development.",
+      technologies: [
+        ["Pyton", "FastAPI", "PostgreSQL"],
+        ["Professional Networking", "Career Development"]
+      ],
+      image: "/assets/CorporateProfessionals.png",
+      demoLink: "https://corporatesandprofessionals.com/"
     }
   ];
 

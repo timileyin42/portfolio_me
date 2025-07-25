@@ -5,7 +5,8 @@
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  padding-top: 4rem; /* Account for task bar */
+  background: #000000;
   text-align: center;
 }
 
@@ -40,7 +41,7 @@
 .heroTitle {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #2d3748;
+  color: #ffffff;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -48,11 +49,72 @@
 .heroSubtitle {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #4a5568;
+  color: #e2e8f0;
   font-weight: 400;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Animated Content Styles */
+.animatedContent {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contentSection {
+  animation: fadeInUp 0.8s ease-out;
+  width: 100%;
+}
+
+.aboutTitle {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #0077b5;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e2e8f0;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.highlightItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.highlightNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0077b5;
+  line-height: 1;
+}
+
+.highlightText {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  font-weight: 500;
+  text-align: center;
 }
 
 .heroButton {
@@ -89,6 +151,17 @@
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .profileImageContainer {
@@ -104,6 +177,22 @@
   .heroSubtitle {
     font-size: 1.1rem;
   }
+  
+  .aboutTitle {
+    font-size: 1.8rem;
+  }
+  
+  .aboutText {
+    font-size: 1rem;
+  }
+  
+  .highlights {
+    gap: 2rem;
+  }
+  
+  .highlightNumber {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -118,5 +207,28 @@
 
   .hero {
     padding: 2rem 1rem;
+    padding-top: 3.5rem;
+  }
+  
+  .aboutTitle {
+    font-size: 1.6rem;
+  }
+  
+  .aboutText {
+    font-size: 0.95rem;
+  }
+  
+  .highlights {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .highlightNumber {
+    font-size: 1.8rem;
+  }
+  
+  .animatedContent {
+    min-height: 150px;
   }
 }

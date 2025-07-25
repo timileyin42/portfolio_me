@@ -8,16 +8,16 @@ const Footer = () => (
         <p className={styles.copyright}>&copy; 2025 Ibrahim Akanmu. All rights reserved.</p>
         
         <div className={styles.socialLinks}>
-          <a href="https://github.com/timileyin42" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+          <a href="https://github.com/timileyin42" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="GitHub">
             <i className="fab fa-github"></i>
           </a>
-          <a href="www.linkedin.com/in/ibrahim-akanmu-a3159b266" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+          <a href="https://www.linkedin.com/in/ibrahim-akanmu-a3159b266" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="LinkedIn">
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://x.com/maverick_42251" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+          <a href="https://x.com/maverick_42251" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="X (Twitter)">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="mailto:akanmuibro@gmail.com" className={styles.socialLink}>
+          <a href="mailto:akanmuibro@gmail.com" className={styles.socialLink} title="Email">
             <i className="fas fa-envelope"></i>
           </a>
         </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import TaskBar from './components/TaskBar';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -33,6 +34,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <TaskBar />
         <Header />
         <main>
           <Hero />

@@ -44,8 +44,24 @@
 }
 
 .socialLink:hover {
-  background-color: #0077b5;
   transform: translateY(-3px);
+}
+
+/* Platform-specific hover colors */
+.socialLink:nth-child(1):hover {
+  background-color: #333; /* GitHub */
+}
+
+.socialLink:nth-child(2):hover {
+  background-color: #0077b5; /* LinkedIn */
+}
+
+.socialLink:nth-child(3):hover {
+  background-color: #000; /* X (Twitter) */
+}
+
+.socialLink:nth-child(4):hover {
+  background-color: #ea4335; /* Email */
 }
 
 /* Font Awesome icons */
