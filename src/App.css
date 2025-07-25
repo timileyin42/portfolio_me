@@ -26,22 +26,9 @@ body {
   color: var(--text-medium);
   background-color: #000000;
   overflow-x: hidden;
-  margin-left: 250px;
-  transition: margin-left 0.3s ease;
 }
 
-/* Responsive adjustments for sidebar */
-@media (max-width: 768px) {
-  body {
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    margin-left: 0;
-  }
-}
+/* Responsive design - no margin adjustments needed for floating taskbar */
 
 .app {
   display: flex;
