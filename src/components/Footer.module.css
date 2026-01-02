@@ -1,27 +1,25 @@
 /* Footer.module.css */
 .footer {
-  background-color: #2d3748;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   padding: 3rem 2rem;
   text-align: center;
+  border-top: 1px solid #e0e0e0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .copyright {
   margin: 0;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
 }
 
 .socialLinks {
@@ -31,12 +29,12 @@
 }
 
 .socialLink {
-  color: #fff;
+  color: #666;
   font-size: 1.2rem;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,29 +42,8 @@
 }
 
 .socialLink:hover {
+  color: #000;
   transform: translateY(-3px);
-}
-
-/* Platform-specific hover colors */
-.socialLink:nth-child(1):hover {
-  background-color: #333; /* GitHub */
-}
-
-.socialLink:nth-child(2):hover {
-  background-color: #0077b5; /* LinkedIn */
-}
-
-.socialLink:nth-child(3):hover {
-  background-color: #000; /* X (Twitter) */
-}
-
-.socialLink:nth-child(4):hover {
-  background-color: #ea4335; /* Email */
-}
-
-/* Font Awesome icons */
-.fab, .fas {
-  line-height: 1;
 }
 
 /* Responsive Design */
@@ -80,8 +57,7 @@
   }
   
   .socialLink {
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
+    width: 40px;
+    height: 40px;
   }
 }

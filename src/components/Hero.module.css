@@ -5,138 +5,109 @@
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
-  padding-top: 4rem; /* Account for task bar */
-  background: #000000;
+  padding-top: 4rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   text-align: center;
 }
 
 .heroContent {
   max-width: 800px;
   padding: 2rem;
-  animation: fadeIn 0.8s ease-out;
+  animation: fadeInUp 1s ease-out;
 }
 
 .profileImageContainer {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 1.5rem;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 2rem;
   border-radius: 50%;
-  border: 5px solid white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-}
-
-.profileImageContainer:hover {
-  transform: scale(1.05);
 }
 
 .heroPhoto {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  border-radius: 50%;
+  border: 5px solid #000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
 }
 
 .heroTitle {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
   margin-bottom: 1rem;
-  color: #ffffff;
-  font-weight: 700;
   line-height: 1.2;
+}
+
+.nameHighlight {
+  color: #000;
+  position: relative;
 }
 
 .heroSubtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: #e2e8f0;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Animated Content Styles */
-.animatedContent {
-  min-height: 200px;
+.heroCTA {
   display: flex;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-.contentSection {
-  animation: fadeInUp 0.8s ease-out;
-  width: 100%;
-}
-
-.aboutTitle {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  color: #0077b5;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.aboutText {
+.hireButton {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: #e2e8f0;
-  font-weight: 400;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.highlights {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 2rem;
+.hireButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.highlightItem {
+.availabilityBadge {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
 
-.highlightNumber {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #0077b5;
-  line-height: 1;
-}
-
-.highlightText {
-  font-size: 0.9rem;
-  color: #a0aec0;
-  font-weight: 500;
-  text-align: center;
-}
-
-.heroButton {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background-color: #0077b5; /* LinkedIn blue */
-  color: white;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 119, 181, 0.2);
-  border: 2px solid transparent;
-}
-
-.heroButton:hover {
-  background-color: white;
-  color: #0077b5;
-  border-color: #0077b5;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 119, 181, 0.3);
+.statusDot {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 /* Animations */
@@ -164,71 +135,37 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .profileImageContainer {
-    width: 150px;
-    height: 150px;
-    border-width: 4px;
-  }
-
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .heroSubtitle {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
-  
-  .aboutTitle {
-    font-size: 1.8rem;
-  }
-  
-  .aboutText {
+
+  .heroDescription {
     font-size: 1rem;
   }
-  
-  .highlights {
-    gap: 2rem;
-  }
-  
-  .highlightNumber {
-    font-size: 2rem;
+
+  .heroCTA {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 480px) {
-  .profileImageContainer {
-    width: 120px;
-    height: 120px;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
-  .heroTitle {
-    font-size: 1.8rem;
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
   }
-
-  .hero {
-    padding: 2rem 1rem;
-    padding-top: 3.5rem;
-  }
-  
-  .aboutTitle {
-    font-size: 1.6rem;
-  }
-  
-  .aboutText {
-    font-size: 0.95rem;
-  }
-  
-  .highlights {
-    gap: 1.5rem;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .highlightNumber {
-    font-size: 1.8rem;
-  }
-  
-  .animatedContent {
-    min-height: 150px;
+  50% {
+    opacity: 0.5;
   }
 }
