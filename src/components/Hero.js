@@ -17,7 +17,7 @@ const Hero = () => {
       <div className={styles.heroContent}>
         <div className={styles.profileImageContainer}>
           <img
-            src="/assets/Profile.png"
+            src="/assets/profile.jpg"
             alt="Ibrahim Akanmu"
             className={styles.heroPhoto}
           />
