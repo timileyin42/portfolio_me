@@ -1,10 +1,10 @@
 /* Footer.module.css */
 .footer {
-  background-color: #fff;
-  color: #333;
+  background-color: #0a0a0a;
+  color: #fff;
   padding: 3rem 2rem;
   text-align: center;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -19,7 +19,7 @@
 .copyright {
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .socialLinks {
@@ -29,12 +29,12 @@
 }
 
 .socialLink {
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,8 @@
 }
 
 .socialLink:hover {
-  color: #000;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-3px);
 }
 

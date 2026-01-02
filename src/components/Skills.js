@@ -3,10 +3,10 @@ import styles from './Skills.module.css';
 
 const Skills = () => {
   const skills = [
-    "HTML", "CSS", "JavaScript", "TypeScript", "ReactJS", "NextJS",
-    "NodeJS", "Python", "PHP", "jQuery", "Git", "GitHub",
-    "Figma", "Photoshop", "Premiere Pro", "TailwindCSS", "Bootstrap",
-    "SCSS", "MongoDB", "ExpressJS", "PostgreSQL", "FastAPI", "Django", "Flask"
+    "JavaScript", "TypeScript", "ReactJS",
+    "NodeJS", "Python", "Git", "GitHub",
+    "FastAPI", "Django", "GoLang", "Docker",  "AWS",
+    "Cloud Computing", "MongoDB", "ExpressJS", "PostgreSQL", "Flask"
   ];
 
   return (
