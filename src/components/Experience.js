@@ -4,16 +4,16 @@ import styles from './Experience.module.css';
 const Experience = () => {
   const experiences = [
     {
+      company: "Unyte.Africa",
+      duration: "Mar 2025 - Present",
+      role: "Backend Developer",
+      description: "Developing backend services and API endpoints supporting core platform features and user workflows. Implementing secure authentication, session handling, and data flow between services. Working with PostgreSQL to improve data integrity, indexing, and query performance. Collaborating with product and frontend teams to deliver reliable backend functionality."
+    },
+    {
       company: "Fixit Technology Ltd",
       duration: "Nov 2022 - Mar 2024",
       role: "Backend Developer & DevOps Operator",
       description: "Built backend applications, implemented automation, and managed cloud infrastructure."
-    },
-    {
-      company: "WiseWheel Rental",
-      duration: "Jan 2022 - Oct 2022",
-      role: "Backend Engineer",
-      description: "Developed API endpoints for car rental services and improved application efficiency."
     },
     {
       company: "Capitaa",
